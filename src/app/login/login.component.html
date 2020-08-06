@@ -1,0 +1,28 @@
+<html>
+    <title>Workshop 4</title>
+    <head>
+        <title>Workshop 4</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+<body class="login-form">
+    <div class="login-form">
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" [(ngModel)]="email_address" name="email_address" class="form-control" id="inputEmail" placeholder="Email Address" required>
+              <small id="emailHelp" class="form-text text-muted">login with a valid email & password.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input  type="password" [(ngModel)]="valid_password" name="valid_password" class="form-control" id="inputPassword" placeholder="Password" required>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button (click)="loginClick()" type="submit" class="btn btn-primary btn-block">Login Now</button>
+        </form>
+    </div>
+</body>
+</html>
+
